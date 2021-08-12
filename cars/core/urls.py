@@ -1,0 +1,10 @@
+from django.urls import path
+from core import views
+
+urlpatterns = [
+    path('', views.show_cars),
+    path('toyota_supra', views.car1),
+    path('nissan_gtr', views.car2),
+    path('audi_r8', views.car3)
+
+    ]
