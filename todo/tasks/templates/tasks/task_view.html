@@ -1,0 +1,30 @@
+{% extends 'tasks/base.html' %}
+{%block content%}
+<div class="center-column">
+
+
+	<div class="todo-list">
+	<h3>Tasks</h3>
+		<h2><strong>{{task_object.name}}</strong></h2>
+		<br>
+		<br>
+		<h2>{{task_object.description}}</h2>
+		<br>
+		<h2>{{task_object.created_at}}</h2>
+		<br>
+		<h2>{{task_object.status}}</h2>
+		<br>
+
+	<a class="btn btn-sm btn-info" href="#">Update</a>
+		<a class="btn btn-sm btn-danger" href="#">Delete</a>
+
+
+
+	</div>
+</div>
+{%endblock%}
+
+
+
+
+
