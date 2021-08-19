@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h3>New Article</h3>
+		<form method="POST" >
+        {% csrf_token %}
+		<!-- here should be the form don't forget about csrf_token -->
+		{{ form }}
+		<input class="btn btn-info" type="submit" name="Create Task">
+	</form>
+</body>
+</html>
